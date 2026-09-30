@@ -1,0 +1,12 @@
+# Material del reto: no se sube al repositorio
+crackme_level1
+crackme_level2
+crackme_level2_stripped
+*.zip
+Guia_2_FDSI_Reverse_Engineering_CTF.html
+README_ESTUDIANTE.md
+# Ghidra
+*.gpr
+*.rep/
+*.lock
+*.lock~
