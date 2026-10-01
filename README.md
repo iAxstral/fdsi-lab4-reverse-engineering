@@ -3,7 +3,7 @@
 Ruta alternativa al ejercicio Red Team vs. Blue Team: análisis de tres binarios ELF x86-64
 (`crackme_level1`, `crackme_level2`, `crackme_level2_stripped`) sin acceso al código fuente.
 
-- **Integrantes:** _(nombres del equipo)_
+- **Integrantes:** _Tomas Olaya Diaz y Juan Pablo Vega Villamil._
 - **Curso:** FDSI · 2026-2
 - **Tag de entrega:** `lab-reverse-v1`
 
