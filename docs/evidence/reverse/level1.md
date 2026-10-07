@@ -70,5 +70,5 @@ para ver la clave. Compilar un secreto dentro del programa no lo oculta: solo lo
 que cualquiera con acceso al ejecutable puede inspeccionar.
 
 ## Capturas
-![Identificación de password](evidence/reverse/screenshots/usolesseidentificacionpassword.png)
-![Password encontrada mediante strings](evidence/reverse/screenshots/pruebaUsolessStringyPasswordEncontrada.png)
+![Identificación de password](./screenshots/usolesseidentificacionpassword.png)
+![Password encontrada mediante strings](./screenshots/pruebaUsolessStringyPasswordEncontrada.png)
