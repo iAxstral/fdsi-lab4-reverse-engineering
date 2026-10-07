@@ -6,7 +6,7 @@
 ## 1. Observación inicial
 Se ejecutó el programa sin argumentos y con un dato falso, sin asumir nada:
 
-```
+```bash
 $ ./crackme_level1
 === FDSI CrackMe Level 1 ===
 Uso: ./crackme_level1 <password>
@@ -26,7 +26,7 @@ el programa compara el argumento con una cadena fija. Si esa cadena está embebi
 ## 3. Evidencia
 `strings -n 5 crackme_level1` mostró, entre otras, estas cadenas relevantes:
 
-```
+```text
 REDTEAM-101
 === FDSI CrackMe Level 1 ===
 Uso: %s <password>
@@ -51,7 +51,7 @@ Se confirmó con `objdump -d -M intel crackme_level1` (función `main`):
 Flujo: `main` → `strcmp(argv[1], "REDTEAM-101")` → si es 0, `print_flag`.
 
 ## 4. Resultado
-```
+```bash
 $ ./crackme_level1 REDTEAM-101
 === FDSI CrackMe Level 1 ===
 Access granted.
@@ -70,6 +70,5 @@ para ver la clave. Compilar un secreto dentro del programa no lo oculta: solo lo
 que cualquiera con acceso al ejecutable puede inspeccionar.
 
 ## Capturas
-<!-- ![ejecución](screenshots/level1-run.png) -->
-<!-- ![strings](screenshots/level1-strings.png) -->
-<!-- ![objdump](screenshots/level1-objdump.png) -->
+![Identificación de password](evidence/reverse/screenshots/usolesseidentificacionpassword.png)
+![Password encontrada mediante strings](evidence/reverse/screenshots/pruebaUsolessStringyPasswordEncontrada.png)
